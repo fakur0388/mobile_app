@@ -69,7 +69,8 @@ class MainPage extends StatelessWidget {
               context,
               title: "Buka Hello World",
               icon: Icons.text_fields,
-              page: const HelloWorld(), // Memanggil class dari basic_widgets/hello_world.dart
+              page:
+                  const HelloWorld(), // Memanggil class dari basic_widgets/hello_world.dart
             ),
             const SizedBox(height: 12), // Memberi jarak vertikal antar kartu
             _buildMenuCard(

@@ -37,7 +37,10 @@ class MataKuliahDetail extends StatelessWidget {
                 Text('SKS : $sks', style: const TextStyle(fontSize: 16)),
                 const SizedBox(height: 8),
                 // Menampilkan semester mata kuliah.
-                Text('Semester : $semester', style: const TextStyle(fontSize: 16)),
+                Text(
+                  'Semester : $semester',
+                  style: const TextStyle(fontSize: 16),
+                ),
               ],
             ),
           ),
