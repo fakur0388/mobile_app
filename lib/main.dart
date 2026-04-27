@@ -14,6 +14,8 @@ import 'intermediate_widgets/row_column_widget.dart';
 // Halaman-halaman yang menunjukkan navigasi dan parsing data
 import 'pages/halaman_pertama.dart';
 import 'pages/parsing.dart';
+import 'pages/mahasiswa_form.dart';
+import 'pages/mata_kuliah_form.dart';
 
 // ===== Mengimport example widgets =====
 // Contoh-contoh widget untuk pembelajaran StatelessWidget dan StatefulWidget
@@ -103,6 +105,22 @@ class MainPage extends StatelessWidget {
               title: "Buka Parsing Page",
               icon: Icons.data_usage,
               page: const Parsing(),
+            ),
+            const SizedBox(height: 12),
+            // Menu baru: Form tambah mahasiswa untuk input data
+            _buildMenuCard(
+              context,
+              title: "Tambah Mahasiswa",
+              icon: Icons.person_add,
+              page: const MahasiswaForm(),
+            ),
+            const SizedBox(height: 12),
+            // Menu baru: Form tambah mata kuliah untuk input data
+            _buildMenuCard(
+              context,
+              title: "Tambah Mata Kuliah",
+              icon: Icons.menu_book,
+              page: const MataKuliahForm(),
             ),
             const SizedBox(height: 12),
             // Menu baru: Contoh Stateless Widget
